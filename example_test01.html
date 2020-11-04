@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="example_test01.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown_C{
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    bottom: 30px;
+    left: 50px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown_C{
+    display: block;
+}
+    body{
+  background: gray;
+}
+div.static {
+  background: darkgreen;
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  bottom: 650px;
+  width: 1510px;
+  height: 65px;
+}
+div.static_G {
+  background: white;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  height: 70px;
+  bottom: 10px;
+  width: 20%;
+  border: 3px solid blue;
+}
+div.static_G_S {
+  background: white;
+  display: grid;
+  justify-content: left;
+  position: relative;
+  height: 70px;
+  bottom: 10px;
+  width: 20%;
+  border: 3px solid blue;
+}
+div.static_F{
+  background: red;
+  display: grid;
+  justify-content: center;
+  position: center;
+  bottom: 100px;
+  right: 500px;
+  width: 1200px;
+  height: 840px;
+  border: 3px solid blue;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 366px;
+  background : green;
+  border: 3px solid #73AD21;
+}
+div.fixed1 {
+  position: fixed;
+  bottom: 373px;
+  right: 0;
+  width: 300px;
+  height: 270px;
+  background : darkcyan;
+  border: 3px solid #73AD21;
+}
+</style>
+<body>
+<form>
+    <div class="static">
+        <div class="static_G_S">
+            <div class="dropdown">
+                <img src="searcehd.jpg"width="50px" height="50px">
+                <div class="dropdown_C">
+                    <input>
+                </div>
+            </div>
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="50px" height="50px">
+
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="50px" height="50px">
+
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="50px" height="50px">
+
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="50px" height="50px">
+
+        </div>
+        <div class="fixed">
+            <label>username:</label>
+            <input type="text">
+            <label>password:</label>
+            <input type="password"><br>
+            <button type="submit">submit</button><br>
+            <img src="user-image.jpg"width="300px" height="300px">
+
+
+        </div>
+        <div class="fixed1">
+            <h3>news:</h3>
+            <P>wasup</P>
+        </div>
+
+    </div>
+<div class="static_F"></div>
+</form>
+</body>
+</html>

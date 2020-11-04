@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="example_test01.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+  background: gray;
+}
+div.static {
+  background: white;
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  bottom: 650px;
+  width: 1500px;
+  border: 3px solid blue;
+}
+div.static_G {
+  background: white;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+  width: 20%;
+  border: 3px solid blue;
+}
+div.static_F{
+  background: white;
+  display: grid;
+  justify-content: center;
+  position: center;
+  bottom: 100px;
+  right: 500px;
+  width: 1200px;
+  height: 840px;
+  border: 3px solid blue;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 366px;
+  background : green;
+  border: 3px solid #73AD21;
+}
+div.fixed1 {
+  position: fixed;
+  bottom: 373px;
+  right: 0;
+  width: 300px;
+  height: 270px;
+  background : darkcyan;
+  border: 3px solid #73AD21;
+}
+</style>
+<body>
+<form>
+    <div class="static">
+        <div class="static_G">
+            <img src="Untitled-1.png"width="40px" height="30px">
+            <label>home</label>
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="40px" height="30px">
+            <label>home</label>
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="40px" height="30px">
+            <label>home</label>
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="40px" height="30px">
+            <label>home</label>
+        </div>
+        <div class="static_G">
+            <img src="Untitled-1.png"width="40px" height="30px">
+            <label>home</label>
+        </div>
+        <div class="fixed">
+            <label>username:</label>
+            <input type="text">
+            <label>password:</label>
+            <input type="text"><br>
+            <button type="submit">submit</button><br>
+            <img src="user-image.jpg"width="300px" height="300px">
+
+
+        </div>
+        <div class="fixed1">
+            <h3>news:</h3>
+            <P>wasup</P>
+        </div>
+
+    </div>
+<div class="static_F"></div>
+</form>
+</body>
+</html>
